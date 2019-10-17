@@ -1,0 +1,235 @@
+/*=========================================================
+                      DEFAULT VALUES
+
+               FONT Family:          ROBOTO condensed 
+               Greenish Blue:        #34C6D3  (Buttons, Icons, links, lines and background)
+               Steel Gray:           #41464B  (Headings)
+               Blue Bayoux:          #64707B  (Paragraphs)
+               White:                #FFF     (Text with black backgrounds)
+               Black:                #000      
+
+==========================================================*/
+
+/* General CSS */
+
+html,
+body {
+
+    height: 100%;
+}
+
+body {
+
+    font-family: 'Roboto condensed', sans-serif;
+}
+p {
+    color: #64707B;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+h3 {
+    color: #41464B;
+    text-transform: uppercase;
+}
+
+/*=========================================================
+                        HOME
+==========================================================*/
+#home {
+
+    height: 100%;
+}
+
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/MBS-Blockchain.jpg");
+
+}
+
+#home-content-box {
+
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#home-heading h3 {
+
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+#home-heading h1 {
+
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+/*=========================================================
+                        PARALAX (Generic)
+==========================================================*/
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*=========================================================
+                        BUTTONS (Generic)
+==========================================================*/
+.btn-general {
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464B;
+}
+/***********************************************************
+                        ANIMATE
+************************************************************/
+#home-cover {
+    animation-delay: .1s;
+    animation-duration: .5s;
+}
+#home-heading {
+    animation-delay: .5s;
+    animation-duration: .5s;
+}
+#home-btn {
+    animation-delay: 1s;
+    animation-duration: .5s;
+}
+/***********************************************************
+                        CONTENT (Generic)
+************************************************************/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34C6D3;
+    margin: 0 auto 30px auto;
+}
+/***********************************************************
+                        SERVICES
+************************************************************/
+
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.service-item-icon i {
+    color: #34C6D3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34C6D3;
+}
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+.service-item-desc p {
+    margin: 0;
+    padding-left: 85px;
+}
+.floatRight {
+    float:right;
+    margin-left:20px;
+    height: 50%;
+    width: 50%;
+    background-image: url("../img/deal.jpg");
+    background-repeat: no-repeat;
+}
+.footer-bs {
+    background-color: #34C6D3;
+    padding: 60px 40px;
+    color: rgba(255,255,255,1.00);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+    .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
